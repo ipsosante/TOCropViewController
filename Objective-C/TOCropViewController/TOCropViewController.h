@@ -312,6 +312,10 @@
  */
 @property (nullable, nonatomic, strong) void (^onDidCropToCircleImage)(UIImage* _Nonnull image, CGRect cropRect, NSInteger angle);
 
+/**
+ Force the image to be saved as a square, regardless of the crop style
+ */
+@property (nonatomic, assign) BOOL cropsCircleToSquare;
 
 ///------------------------------------------------
 /// @name Object Creation
